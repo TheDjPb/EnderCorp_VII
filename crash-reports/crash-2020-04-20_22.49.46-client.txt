@@ -1,0 +1,137 @@
+---- Minecraft Crash Report ----
+// My bad.
+
+Time: 2020-04-20 22:49:46 CEST
+Description: Error executing task
+
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+    at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+    at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+    at net.minecraft.util.Util.runTask(SourceFile:531)
+    at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1088)
+    at net.minecraft.client.Minecraft.run(Minecraft.java:3942)
+    at net.minecraft.client.main.Main.main(SourceFile:123)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:497)
+    at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+    at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+Caused by: java.lang.NullPointerException
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+  Minecraft Version: 1.12.2
+  Operating System: Windows 10 (amd64) version 10.0
+  Java Version: 1.8.0_51, Oracle Corporation
+  Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+  Memory: 864302456 bytes (824 MB) / 1724907520 bytes (1645 MB) up to 3008888832 bytes (2869 MB)
+  JVM Flags: 4 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx3228m -Xms256m -XX:PermSize=256m
+  IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+  FML: MCP 9.42 Powered by Forge 14.23.5.2854 67 mods loaded, 67 mods active
+       States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+       
+       | State  | ID                   | Version                  | Source                                        | Signature                                |
+       |:------ |:-------------------- |:------------------------ |:--------------------------------------------- |:---------------------------------------- |
+       | LCHIJA | minecraft            | 1.12.2                   | minecraft.jar                                 | None                                     |
+       | LCHIJA | mcp                  | 9.42                     | minecraft.jar                                 | None                                     |
+       | LCHIJA | FML                  | 8.0.99.99                | forge-1.12.2-14.23.5.2854.jar                 | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+       | LCHIJA | forge                | 14.23.5.2854             | forge-1.12.2-14.23.5.2854.jar                 | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+       | LCHIJA | foamfixcore          | 7.7.4                    | minecraft.jar                                 | None                                     |
+       | LCHIJA | gottagofast          | 1.1                      | gottagofast-1.1.jar                           | None                                     |
+       | LCHIJA | forgeendertech       | 1.12.2-4.5.2.0           | ForgeEndertech-1.12.2-4.5.2.0-build.0459.jar  | None                                     |
+       | LCHIJA | adlods               | 1.12.2-1.0.7.1           | AdLods-1.12.2-1.0.7.1-build.0441.jar          | None                                     |
+       | LCHIJA | jei                  | 4.15.0.291               | jei_1.12.2-4.15.0.291.jar                     | None                                     |
+       | LCHIJA | appleskin            | 1.0.9                    | AppleSkin-mc1.12-1.0.9.jar                    | None                                     |
+       | LCHIJA | betterquesting       | 3.5.323                  | BetterQuesting-3.5.323.jar                    | None                                     |
+       | LCHIJA | biomesoplenty        | 7.0.1.2441               | BiomesOPlenty-1.12.2-7.0.1.2441-universal.jar | None                                     |
+       | LCHIJA | bonsaitrees          | 1.1.4                    | bonsaitrees-1.1.4-b170.jar                    | None                                     |
+       | LCHIJA | bookshelf            | 2.3.590                  | Bookshelf-1.12.2-2.3.590.jar                  | d476d1b22b218a10d845928d1665d45fce301b27 |
+       | LCHIJA | chameleon            | 1.12-4.1.3               | Chameleon-1.12-4.1.3.jar                      | None                                     |
+       | LCHIJA | chancecubes          | 1.12.2-5.0.2.345         | ChanceCubes-1.12.2-5.0.2.345.jar              | None                                     |
+       | LCHIJA | ctm                  | MC1.12.2-1.0.2.31        | CTM-MC1.12.2-1.0.2.31.jar                     | None                                     |
+       | LCHIJA | chisel               | MC1.12.2-1.0.2.45        | Chisel-MC1.12.2-1.0.2.45.jar                  | None                                     |
+       | LCHIJA | codechickenlib       | 3.2.3.358                | CodeChickenLib-1.12.2-3.2.3.358-universal.jar | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+       | LCHIJA | crafttweaker         | 4.1.20                   | CraftTweaker2-1.12-4.1.20.562.jar             | None                                     |
+       | LCHIJA | mantle               | 1.12-1.3.3.55            | Mantle-1.12-1.3.3.55.jar                      | None                                     |
+       | LCHIJA | tconstruct           | 1.12.2-2.13.0.183        | TConstruct-1.12.2-2.13.0.183.jar              | None                                     |
+       | LCHIJA | conarm               | 1.2.5.4                  | conarm-1.12.2-1.2.5.4.jar                     | 2484ef4d131fdc0dca0647aa21b7b944ddb935a1 |
+       | LCHIJA | cookingforblockheads | 6.5.0                    | CookingForBlockheads_1.12.2-6.5.0.jar         | None                                     |
+       | LCHIJA | ctgui                | 1.0.0                    | CraftTweaker2-1.12-4.1.20.562.jar             | None                                     |
+       | LCHIJA | crafttweakerjei      | 2.0.3                    | CraftTweaker2-1.12-4.1.20.562.jar             | None                                     |
+       | LCHIJA | custombackgrounds    | 1.0                      | CustomBackgrounds-MC1.12-1.1.1.jar            | None                                     |
+       | LCHIJA | custommainmenu       | 2.0.9.1                  | CustomMainMenu-MC1.12.2-2.0.9.1.jar           | None                                     |
+       | LCHIJA | customnpcs           | 1.12                     | CustomNPCs_1.12.2-(01Oct19).jar               | None                                     |
+       | LCHIJA | gamestages           | 2.0.117                  | GameStages-1.12.2-2.0.117.jar                 | d476d1b22b218a10d845928d1665d45fce301b27 |
+       | LCHIJA | dimstages            | 2.0.23                   | DimensionStages-1.12.2-2.0.23.jar             | d476d1b22b218a10d845928d1665d45fce301b27 |
+       | LCHIJA | discordsuite         | 2.2.4                    | DiscordSuite-2.2.4.jar                        | None                                     |
+       | LCHIJA | mcjtylib_ng          | 3.5.4                    | mcjtylib-1.12-3.5.4.jar                       | None                                     |
+       | LCHIJA | efab                 | 0.2.0                    | efab-0.2.0.jar                                | None                                     |
+       | LCHIJA | efabctbindings       | 0.2                      | EFab-CT-Bindings-0.2.jar                      | None                                     |
+       | LCHIJA | enderstorage         | 2.4.6.137                | EnderStorage-1.12.2-2.4.6.137-universal.jar   | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+       | LCHIJA | extrautils2          | 1.0                      | extrautils2-1.12-1.9.9.jar                    | None                                     |
+       | LCHIJA | foamfix              | 0.10.10-1.12.2           | foamfix-0.10.10-1.12.2.jar                    | None                                     |
+       | LCHIJA | ftblib               | 5.4.7.0                  | FTBLib-5.4.7.0.jar                            | None                                     |
+       | LCHIJA | ftbutilities         | 5.4.0.124                | FTBUtilities-5.4.0.124.jar                    | None                                     |
+       | LCHIJA | inventorytweaks      | 1.63+release.109.220f184 | InventoryTweaks-1.63.jar                      | 55d2cd4f5f0961410bf7b91ef6c6bf00a766dcbe |
+       | LCHIJA | ironchest            | 1.12.2-7.0.67.844        | ironchest-1.12.2-7.0.72.847.jar               | None                                     |
+       | LCHIJA | itemstages           | 2.0.49                   | ItemStages-1.12.2-2.0.49.jar                  | d476d1b22b218a10d845928d1665d45fce301b27 |
+       | LCHIJA | itlt                 | 1.0.0                    | itlt-1.12.2-1.0.2.jar                         | None                                     |
+       | LCHIJA | journeymap           | 1.12.2-5.7.1             | journeymap-1.12.2-5.7.1.jar                   | None                                     |
+       | LCHIJA | libraryex            | 1.1.2                    | LibraryEx-1.12.2-1.1.2.jar                    | None                                     |
+       | LCHIJA | mousetweaks          | 2.10                     | MouseTweaks-2.10-mc1.12.2.jar                 | None                                     |
+       | LCHIJA | neat                 | 1.4-17                   | Neat 1.4-17.jar                               | None                                     |
+       | LCHIJA | netherex             | 2.1.4                    | NetherEx-1.12.2-2.1.4.jar                     | None                                     |
+       | LCHIJA | bq_npc_integration   | 3.4.34                   | NPCIntegration-3.4.34.jar                     | None                                     |
+       | LCHIJA | oreexcavation        | 1.4.150                  | OreExcavation-1.4.150.jar                     | None                                     |
+       | LCHIJA | questbook            | 3.1.1-1.12               | questbook-3.1.1-1.12.jar                      | None                                     |
+       | LCHIJA | quickleafdecay       | 1.2.4                    | QuickLeafDecay-MC1.12.1-1.2.4.jar             | None                                     |
+       | LCHIJA | recipestages         | 1.1.3                    | RecipeStages-1.1.3.jar                        | None                                     |
+       | LCHIJA | resourceloader       | 1.5.3                    | ResourceLoader-MC1.12.1-1.5.3.jar             | d72e0dd57935b3e9476212aea0c0df352dd76291 |
+       | LCHIJA | bq_standard          | 3.4.173                  | StandardExpansion-3.4.173.jar                 | None                                     |
+       | LCHIJA | storagedrawers       | 1.12.2-5.4.1             | StorageDrawers-1.12.2-5.4.1.jar               | None                                     |
+       | LCHIJA | theoneprobe          | 1.4.28                   | theoneprobe-1.12-1.4.28.jar                   | None                                     |
+       | LCHIJA | tinkersjei           | 1.2                      | tinkersjei-1.2.jar                            | None                                     |
+       | LCHIJA | tinkertoolleveling   | 1.12.2-1.1.0.DEV.b23e769 | TinkerToolLeveling-1.12.2-1.1.0.jar           | None                                     |
+       | LCHIJA | tombstone            | 3.7.3                    | tombstone-3.7.3-1.12.2.jar                    | None                                     |
+       | LCHIJA | topaddons            | 1.12.2-1.13.0            | topaddons-1.12.2-1.13.0.jar                   | None                                     |
+       | LCHIJA | ts2k16               | 1.2.10                   | TS2K16-1.2.10.jar                             | None                                     |
+       | LCHIJA | unloader             | 1.2.0                    | unloader-1.2.0.jar                            | None                                     |
+       | LCHIJA | vanillafix           | 1.0.10-150               | VanillaFix-1.0.10-150.jar                     | None                                     |
+       | LCHIJA | reauth               | 3.6.0                    | reauth-3.6.0.jar                              | daba0ec4df71b6da841768c49fb873def208a1e3 |
+       | LCHIJA | wrapup               | 1.12-1.1.3               | WrapUp-1.12-1.1.3.jar                         | None                                     |
+  Loaded coremods (and transformers): Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+                                        invtweaks.forge.asm.ContainerTransformer
+                                      VanillaFixLoadingPlugin (VanillaFix-1.0.10-150.jar)
+                                        
+                                      Do not report to Forge! (If you haven't disabled the FoamFix coremod, try disabling it in the config! Note that this bit of text will still appear.) (foamfix-0.10.10-1.12.2.jar)
+                                        pl.asie.foamfix.coremod.FoamFixTransformer
+                                      LoadingPlugin (ResourceLoader-MC1.12.1-1.5.3.jar)
+                                        lumien.resourceloader.asm.ClassTransformer
+                                      CorePlugin (ForgeEndertech-1.12.2-4.5.2.0-build.0459.jar)
+                                        
+                                      CTMCorePlugin (CTM-MC1.12.2-1.0.2.31.jar)
+                                        team.chisel.ctm.client.asm.CTMTransformer
+                                      GottaGoFastLoader (gottagofast-1.1.jar)
+                                        com.thiakil.gottagofast.coremod.GottaGoFastASMTransformer
+  GL info: ' Vendor: 'Intel' Version: '4.5.0 - Build 22.20.16.4836' Renderer: 'Intel(R) HD Graphics 630'
+  Pulsar/tconstruct loaded Pulses: - TinkerCommons (Enabled/Forced)
+                                   - TinkerWorld (Enabled/Not Forced)
+                                   - TinkerTools (Enabled/Not Forced)
+                                   - TinkerHarvestTools (Enabled/Forced)
+                                   - TinkerMeleeWeapons (Enabled/Forced)
+                                   - TinkerRangedWeapons (Enabled/Forced)
+                                   - TinkerModifiers (Enabled/Forced)
+                                   - TinkerSmeltery (Enabled/Not Forced)
+                                   - TinkerGadgets (Enabled/Not Forced)
+                                   - TinkerOredict (Enabled/Forced)
+                                   - TinkerIntegration (Enabled/Forced)
+                                   - TinkerFluids (Enabled/Forced)
+                                   - TinkerMaterials (Enabled/Forced)
+                                   - TinkerModelRegister (Enabled/Forced)
+                                   - chiselIntegration (Enabled/Not Forced)
+                                   - theoneprobeIntegration (Enabled/Not Forced)
+  Suspected Mods: Unknown
