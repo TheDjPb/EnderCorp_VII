@@ -15,7 +15,8 @@ Aducine :
 - Quests
 - NPC's
 - GameStages
-
+- Nerf ChanceCubes
+- 
 
 
 Changelog :
