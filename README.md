@@ -3,6 +3,12 @@
 Clone to :
 ``C:\Users\{Username}\Twitch\Minecraft\Instances\EnderCorpSVII``
 
+VeeK : - Mainmenu
+
+TheMaid :
+
+Aducine :
+
 - Ajouter Recettes Vanilla Efab
 - Ajuster Durabilité Pioche Wood & Stone
 - Loot Crates + Drop Rates
