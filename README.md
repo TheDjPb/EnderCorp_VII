@@ -15,3 +15,10 @@ Aducine :
 - Quests
 - NPC's
 - GameStages
+
+
+
+Changelog :
+ - CMM
+ - Loot tables
+ - TheMaid begun CustomNPC
