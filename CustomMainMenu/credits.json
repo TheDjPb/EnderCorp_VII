@@ -1,0 +1,315 @@
+{
+    "images":
+    {
+	
+		"blackline":
+        {
+            "image" : "mainmenu:bg_menu.png",
+            "posX" : -182,
+            "posY" : -200,
+            "width" : 350,
+            "height" : 800,
+            "alignment" : "center"
+        },
+        
+        "logo":
+        {
+            "image" : "mainmenu:logo.png",
+            "posX" : -170,
+            "posY" : -180,
+            "width" : 321,
+            "height" : 153,
+            "alignment" : "center"
+        },
+
+        "avatar":
+        {
+            "image": "web:https://visage.surgeplay.com/bust/3be218756152432f899d8610e529f42d",
+            "posX": 215,
+            "posY": 0,
+            "width": 40,
+            "height": 40,
+            "imageWidth": 200,
+            "imageHeight": 200,
+            "alignment": "left_center"
+        }
+
+	},
+    
+    "buttons":
+    {
+		"back":
+        {
+            "text" : "",
+			"texture" : "mainmenu:close.png",
+            "posX": -20,
+            "posY": 135,
+            "width" : 30,
+            "height" : 30,
+			"imageWidth" : 38,
+			"imageHeight" : 38,
+			"alignment" : "center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "custom.mainmenu"
+            }
+        },
+
+        "credit1": {
+            "text" : "Grian:",
+			"normalTextColor" : 8570940,
+			"hoverTextColor" : 12303291,
+			"texture" : "mainmenu:blankbutton.png",
+            "posX": -182,
+            "posY": -60,
+            "width" : 75,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit1.5": {
+            "text": "Content MD & Wynncraft Founder",
+			"normalTextColor" : 16777215,
+			"hoverTextColor" : 12303291,
+			"texture" : "mainmenu:blankbutton.png",
+            "posX": -107,
+            "posY": -60,
+            "width" : 275,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit2": {
+            "text": "Jumla:",
+			"normalTextColor" : 15122035,
+			"hoverTextColor" : 12303291,
+			"texture" : "mainmenu:blankbutton.png",
+            "posX": -182,
+            "posY": -40,
+            "width" : 75,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit2.5": {
+            "text": "Head Developer & Wynncraft Founder",
+			"normalTextColor" : 16777215,
+			"hoverTextColor" : 12303291,
+			"texture" : "mainmenu:blankbutton.png",
+            "posX": -107,
+            "posY": -40,
+            "width" : 275,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit3": {
+            "text": "Salted:",
+			"normalTextColor" : 7889995,
+			"hoverTextColor" : 12303291,
+			"texture" : "mainmenu:blankbutton.png",
+            "posX": -182,
+            "posY": -20,
+            "width" : 75,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit3.5": {
+            "text": "Game Design & Wynncraft Founder",
+			"normalTextColor" : 16777215,
+			"hoverTextColor" : 12303291,
+			"texture" : "mainmenu:blankbutton.png",
+            "posX": -107,
+            "posY": -20,
+            "width" : 275,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit4": {
+            "text": "",
+			"normalTextColor" : 16777215,
+			"hoverTextColor" : 12303291,
+			"texture" : "mainmenu:blankbutton.png",
+            "posX": -182,
+            "posY": 0,
+            "width" : 75,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit4.5": {
+            "text": "",
+			"normalTextColor" : 16777215,
+			"hoverTextColor" : 12303291,
+			"texture" : "mainmenu:blankbutton.png",
+			"hoverText" : "",
+            "posX": -107,
+            "posY": 0,
+            "width" : 275,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit5": {
+            "text": "VeeeKoooN:",
+			"normalTextColor" : 9190430,
+			"hoverTextColor" : 12303291,
+			"texture" : "mainmenu:blankbutton.png",
+            "posX": -182,
+            "posY": 20,
+            "width" : 75,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit5.5": {
+            "text": "Say Hi ! if you see me in game ! :D",
+			"normalTextColor" : 16777215,
+			"hoverTextColor" : 12303291,
+			"texture" : "mainmenu:blankbutton.png",
+			"hoverText" : "Head Developer / CMM Developer",
+            "posX": -107,
+            "posY": 20,
+            "width" : 275,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit6": {
+            "text": "Based on :",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 16777215,
+			"texture" : "mainmenu:blankbutton.png",
+            "posX": -182,
+            "posY": 40,
+            "width" : 75,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit6.5": {
+            "text": "Wynncraft Ehanced Modpack",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 16777215,
+			"texture" : "mainmenu:blankbutton.png",
+			"hoverText" : "by Kirdow & ThaUnknown_",
+            "posX": -107,
+            "posY": 40,
+            "width" : 275,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit7": {
+            "text": "Artist:",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 16777215,
+			"texture" : "mainmenu:blankbutton.png",
+            "posX": -182,
+            "posY": 60,
+            "width" : 75,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit7.5": {
+            "text": "AzanderK (Wynncraft Website Artist too)",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 16777215,
+			"texture" : "mainmenu:blankbutton.png",
+			"hoverText" : "CMM Backgrounds, Buttons, and Logo",
+            "posX": -107,
+            "posY": 60,
+            "width" : 275,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit8": {
+            "text": "Based on :",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 16777215,
+			"texture" : "mainmenu:blankbutton.png",
+            "posX": -182,
+            "posY": 80,
+            "width" : 75,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit8.5": {
+            "text": "Wynnercraft (Performance Modpack)",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 16777215,
+			"texture" : "mainmenu:blankbutton.png",
+			"hoverText" : "by FadeDave",
+            "posX": -107,
+            "posY": 80,
+            "width" : 275,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit9": {
+            "text": "About Us",
+			"normalTextColor" : 16777215,
+			"hoverTextColor" : 16777215,
+			"texture" : "mainmenu:blankbutton.png",
+            "posX": -182,
+            "posY": 100,
+            "width" : 75,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+			"alignment" : "center"
+        },
+        "credit9.5": {
+            "text": "CLICK HERE !",
+			"normalTextColor" : 15122035,
+			"hoverTextColor" : 16777215,
+			"texture" : "mainmenu:blankbutton.png",
+			"hoverText" : "Wrath of the Fallen Forum Thread",
+            "posX": -107,
+            "posY": 100,
+            "width" : 275,
+            "height" : 20,
+			imageWidth : 300,
+			imageHeight : 50,
+            "alignment" : "center",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://forums.wynncraft.com/threads/%E2%99%9A-wrath-of-the-fallen-%E2%99%9A-french-guild-level-40-recruiting-level-30.264259/#post-3191124"
+            }
+        }
+
+    },
+
+    "other":
+    {
+		"background":
+		{
+			"image" : "mainmenu:helpbg.png",
+			"mode" : "fill"
+		}
+    }
+}

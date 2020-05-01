@@ -1,0 +1,18 @@
+{
+  "id": "Chests_118,140,-90",
+  "name": "Chests",
+  "icon": "waypoint-normal.png",
+  "x": 118,
+  "y": 140,
+  "z": -90,
+  "r": 52,
+  "g": 39,
+  "b": 196,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    0
+  ],
+  "persistent": true
+}
